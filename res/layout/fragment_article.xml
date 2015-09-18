@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/scrollviewHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <RadioGroup
+            android:id="@+id/rg_fragmentarticle_topmenus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:padding="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_articlehome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="文章首页" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_gamenews"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="游戏新闻" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_gametalk"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="游戏杂谈" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_harddeviceinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="硬件信息" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_gameforword"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="游戏前瞻" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_gametest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="游戏评测" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_good"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="原创精品" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_gamerecorde"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="游戏盘点" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_eventfoucs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="时事焦点" />
+
+            <RadioButton
+                android:id="@+id/rb_fragmentarticle_methodcenter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rb_topbgselecter"
+                android:button="@null"
+                android:text="攻略中心" />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragmentarticle_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

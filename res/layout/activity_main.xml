@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gamedemo.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/titleBarText"
+            android:textSize="20sp"
+            android:textColor="#090"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_activitymain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_mainactivity_menus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/banner_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_mainactivity_article"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/chapter_checked"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/article" />
+
+        <RadioButton
+            android:id="@+id/rb_mainactivity_forum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/forum_checked"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/forum" />
+
+        <RadioButton
+            android:id="@+id/rb_mainactivity_game"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/game_checked"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/game" />
+    </RadioGroup>
+
+</LinearLayout>
